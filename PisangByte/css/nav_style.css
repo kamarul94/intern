@@ -1,0 +1,119 @@
+body {
+    margin:0;
+    padding:0;
+}
+.navbar {
+    width:589px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+
+/* main menu styles */
+#nav {
+	opacity:0.8;
+    display:inline-block;
+    width:100%;
+    margin:0px auto;
+    padding:0px 380px;
+    background:#000;
+}
+#nav li {
+    float:left;
+    position:relative;
+    list-style:none;
+}
+#nav a {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:#FFF;
+    text-decoration:none;
+    display:block;
+    padding:0px 10px;
+
+}
+
+/* selected menu element */
+#nav .current a, #nav li:hover > a {
+	opacity:0.8;
+    color:#333;
+    border-top:1px #f8f8f8;
+}
+
+/* sublevels */
+#nav ul li:hover a, #nav li:hover li a {
+    background:none;
+    border:none;
+    color:#000;
+}
+#nav ul li a:hover {
+    background:#666;
+    color:#fff;
+}
+
+#nav ul li:first-child > a {
+    -moz-border-radius-topleft:10px; /*some css3*/
+    -moz-border-radius-topright:10px;
+    -webkit-border-top-left-radius:10px;
+    -webkit-border-top-right-radius:10px;
+}
+#nav ul li:last-child > a {
+    -moz-border-radius-bottomleft:10px; /*some css3*/
+    -moz-border-radius-bottomright:10px;
+    -webkit-border-bottom-left-radius:10px;
+    -webkit-border-bottom-right-radius:10px;
+}
+
+/* drop down */
+#nav li:hover > ul {
+    opacity:1;
+    visibility:visible;
+}
+#nav ul {
+    opacity:0;
+    visibility:hidden;
+    padding:0;
+    width:175px;
+    position:absolute;
+    background:#aabbcc;
+    border:1px solid #7788aa;
+
+    border-radius:10px; /*some css3*/
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    box-shadow:0 2px 2px rgba(0,0,0, .5);
+    -moz-box-shadow:0 2px 2px rgba(0,0,0, .5);
+    -webkit-box-shadow:0 2px 2px rgba(0,0,0, .5);
+
+    -moz-transition:opacity .25s linear, visibility .1s linear .1s;
+    -webkit-transition:opacity .25s linear, visibility .1s linear .1s;
+    -o-transition:opacity .25s linear, visibility .1s linear .1s;
+    transition:opacity .25s linear, visibility .1s linear .1s;
+}
+#nav ul li {
+    float:none;
+    margin:0;
+}
+#nav ul a {
+    font-weight:normal;
+    text-shadow:0 2px 2px rgba(255,255,255, 0.7);
+}
+#nav ul ul {
+    top:0px;
+}
+h1,h2{
+	font-family:Tahoma, Geneva, sans-serif;
+	color:#B41F1B;
+}
+#name {
+	font-weight:bold;
+	color:#000
+}
+
+#map {
+	background-color:#FFF;
+	opacity:0.8;
+	border-color:#4B4B4B;
+	border-radius:10px;
+}
